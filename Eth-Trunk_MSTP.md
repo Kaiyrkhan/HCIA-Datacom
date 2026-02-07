@@ -74,12 +74,6 @@ display lacp statistics eth-trunk 1
 
 **HQ-D1 and HQ-D2**
 
-```shell
-vlan batch 10 20
-
-display vlan
-```
-
 Step1: Eth-Trunk конфигурациялау
 ```shell
 interface Eth-Trunk1
