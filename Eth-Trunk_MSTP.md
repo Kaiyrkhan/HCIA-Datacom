@@ -1,4 +1,4 @@
-# Eth-Trunk and MSTP Configuration in eNSP Simulator
+# Eth-Trunk and MSTP configuration in eNSP Simulator
 
 **HQ-D1 and HQ-D2**
 
@@ -69,7 +69,7 @@ display interface eth-trunk 1
 display lacp statistics eth-trunk 1
 ```
 
-# Eth-Trunk and MSTP Configuration in a Production Environment
+# Eth-Trunk and MSTP configuration in a Production Environment
 
 
 **HQ-D1 and HQ-D2**
