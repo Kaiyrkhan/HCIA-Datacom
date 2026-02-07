@@ -1,4 +1,4 @@
-# Huawei Eth-Trunk and MSTP Configuration on Real Production Device
+# Eth-Trunk and MSTP Configuration in a Production Environment
 
 
 **HQ-D1 and HQ-D2**
