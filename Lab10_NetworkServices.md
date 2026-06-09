@@ -686,22 +686,7 @@ ping 50.5.5.5
 
 ### Configure Remote Access (SSH, Telnet) - A1, A2, D1, D2, C1, EdgeR1, DHCP
 
-Step1: Configure Local User Authentication and Authorization
-```shell
-aaa
- local-user student password cipher Huawei@123
- local-user student service-type terminal ssh telnet
- local-user student privilege level 15
- quit
-```
-
-Step2: Configure SSH User Settings
-```shell
-ssh user student authentication-type password
-ssh user student service-type stelnet
-```
-
-Step3: Enable SSH/Telnet
+Step1: Enable SSH/Telnet
 ```shell
 stelnet server enable
 display ssh server status
@@ -711,7 +696,7 @@ display telnet server status
 telnet server enable
 ```
 
-Step4: Generate RSA Key
+Step2: Generate RSA Key
 ```shell
 rsa local-key-pair create
 
@@ -719,6 +704,21 @@ Warning: Confirm to replace them! Continue? [Y/N] Y
 Input the bits in the modulus[default = 1024]: 2048
 
 display rsa local-key-pair public
+```
+
+Step3: Configure Local User Authentication and Authorization
+```shell
+aaa
+ local-user student password cipher Huawei@123
+ local-user student privilege level 15
+ local-user student service-type terminal ssh telnet
+ quit
+```
+
+Step4: Configure SSH User Settings
+```shell
+ssh user student authentication-type password
+ssh user student service-type stelnet
 ```
 
 Step5: Configure VTY Lines
@@ -731,7 +731,6 @@ user-interface vty 0 4
 
 ```shell
 display cu | include ssh
-display cu | include stelnet
 ```
 
 **Verify SSH Connectivity**
