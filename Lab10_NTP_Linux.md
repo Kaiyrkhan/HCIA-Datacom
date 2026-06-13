@@ -6,10 +6,10 @@
 | Device       | Role       | interface | IP Address / Prefix | Operating System  |
 | ------------ | ---------- | --------- | ------------------- | ----------------- |
 | Ubuntu       | NTP Server | ens34     | 172.16.128.10 /24   | Ubuntu Server     |
-|              |            | ens32     | DHCP Assigned       |                   |
+|              |            | ens32     | DHCP                |                   |
 | R1           | NTP Client | g0/0/0    | 172.16.128.11 /24   | Huawei VRP        |
 | Debian       | NTP Client | ens34     | 172.16.128.12 /24   | Debian Linux      |
-|              |            | ens32     | DHCP Assigned       |                   |
+|              |            | ens32     | DHCP                |                   |
 | Host Machine | Bridge     | Loopback1 | 172.16.128.254 /24  | Microsoft Windows |
 
 ### Scenario
