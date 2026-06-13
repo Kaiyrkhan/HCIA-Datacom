@@ -13,7 +13,7 @@
 
 ### Scenario
 1) Configure the IP Address;
-2) Configure Single-Area OSPFv2;
+2) Configure Single-Area OSPF;
 3) Configure NAT (Easy IP);
 4) Configure NTP Server;
 5) Configure NTP Client.
@@ -76,7 +76,7 @@ display ip int brief
  Reply from 10.1.77.1: bytes=56 Sequence=1 ttl=255 time=60 ms
 ```
 
-## Step2: Configure Single-Area OSPFv2
+## Step2: Configure Single-Area OSPF
 
 ```shell
 [EdgeR1] display ip int brief
