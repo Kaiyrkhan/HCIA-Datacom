@@ -169,7 +169,7 @@ Firewall конфигурациялау
 $ sudo ufw status
 $ sudo ufw enable
 
-NTP портын (123/UDP) ашу
+NTP портына (123/UDP) рұқсат ету
 $ sudo ufw allow from 172.16.128.0/24 to any port 123 proto udp
 $ sudo ufw allow from 172.16.128.0/24 to any port 22 proto tcp
 
