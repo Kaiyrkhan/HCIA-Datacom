@@ -1,4 +1,4 @@
-# HCIA-Datacom (eNSP)
+# Lab Guide for eNSP Environment
 
 ### Course Contents
 1) Huawei VRP Basics
